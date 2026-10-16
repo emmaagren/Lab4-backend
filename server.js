@@ -5,11 +5,13 @@ const mongoose = require("mongoose");
 
 const authRoutes = require("./routes/authRoutes");
 const noteRoutes = require("./routes/noteRoutes");
+const cors = require("cors");
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware för att hantera JSON-data
+app.use(cors());
 app.use(express.json());
 
 // Routes för registrering och inloggning
