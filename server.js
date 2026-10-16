@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const authRoutes = require("./routes/authRoutes");
+const noteRoutes = require("./routes/noteRoutes");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -13,6 +14,7 @@ app.use(express.json());
 
 // Routes för registrering och inloggning
 app.use("/api", authRoutes);
+app.use("/api", noteRoutes);
 
 // Anslut till MongoDB Atlas
 mongoose.connect(process.env.MONGODB_URI)
