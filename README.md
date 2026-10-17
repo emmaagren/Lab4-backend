@@ -129,7 +129,11 @@ API:et har testats lokalt med PowerShell. Registrering, inloggning, JWT-verifier
 
 ## Publicering
 
-Information om den publicerade backend-adressen läggs till efter driftsättning.
+Backend-API:et är publicerat på Render.
+
+**Webbadress:** https://lab4-backend-l388.onrender.com
+
+API:et kan användas för registrering, inloggning samt skapande och hämtning av skyddade anteckningar.
 
 ## Kurs
 
